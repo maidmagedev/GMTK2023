@@ -17,9 +17,7 @@ ModelImporter:
     removeConstantScaleCurves: 1
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Inbetween bone
-      rotation in copied configuration does not match rotation in animation file:\n\t'Hip.R'
-      : rotation error = 26.212099 deg\n"
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -51,38 +49,9 @@ ModelImporter:
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 1
-      keepOriginalOrientation: 1
+      keepOriginalOrientation: 0
       keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 1
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Idle
-      takeName: Armature|Idle
-      internalID: -8945691123924629249
-      firstFrame: 0
-      lastFrame: 24
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 1
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
-      keepOriginalOrientation: 1
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 1
+      keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
@@ -139,175 +108,7 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human:
-    - boneName: Spine.1
-      humanName: Hips
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Thigh.DEF.L
-      humanName: LeftUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Thigh.DEF.R
-      humanName: RightUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Shin.DEF.L
-      humanName: LeftLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Shin.DEF.R
-      humanName: RightLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Foot.L
-      humanName: LeftFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Foot.R
-      humanName: RightFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Spine.2
-      humanName: Spine
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Neck
-      humanName: Neck
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Head
-      humanName: Head
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Shoulder.L
-      humanName: LeftShoulder
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Shoulder.R
-      humanName: RightShoulder
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Bicep.DEF.L
-      humanName: LeftUpperArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Bicep.DEF.R
-      humanName: RightUpperArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Forearm.DEF.L
-      humanName: LeftLowerArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Forearm.DEF.R
-      humanName: RightLowerArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Palm.L
-      humanName: LeftHand
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Palm.R
-      humanName: RightHand
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Armature
-      humanName: Right Little Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Bone
-      humanName: Right Little Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Sphere
-      humanName: Right Little Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
+    human: []
     skeleton:
     - name: Mage(Clone)
       parentName: 
@@ -586,9 +387,9 @@ ModelImporter:
       scale: {x: 0.9999998, y: 1.0000002, z: 1.0000002}
     - name: Hat
       parentName: Head
-      position: {x: -0.018652193, y: 0.39224052, z: -0.20899254}
-      rotation: {x: 0.8977057, y: 0.008196514, z: -0.0032603818, w: -0.44050738}
-      scale: {x: 0.5723945, y: 0.44875857, z: 0.5671229}
+      position: {x: -0.018652238, y: 0.392241, z: -0.2089925}
+      rotation: {x: 0.8977057, y: 0.008196506, z: -0.003260383, w: -0.44050738}
+      scale: {x: 0.57239455, y: 0.4487586, z: 0.56712294}
     - name: Head_end
       parentName: Head
       position: {x: -0, y: 0.35022876, z: 0}
@@ -616,29 +417,9 @@ ModelImporter:
       scale: {x: 1.000001, y: 1.000001, z: 1.0000006}
     - name: Armature
       parentName: Palm.R
-      position: {x: 0.18038532, y: 0.4927584, z: -1.1862624}
-      rotation: {x: -0.2349115, y: 0.48872334, z: -0.6855177, w: 0.4858309}
-      scale: {x: 2.000001, y: 1.9999992, z: 2}
-    - name: Bone
-      parentName: Armature
-      position: {x: -0.9369471, y: -0.35860014, z: -0.30909786}
-      rotation: {x: 0.76132876, y: -0.5606208, z: 0.3213721, w: 0.05294165}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Sword
-      parentName: Bone
-      position: {x: 0.004323691, y: 0.07448459, z: -0.0005891919}
-      rotation: {x: 1, y: -0.0000000020963185, z: 0.00000019771502, w: 0.000000043711392}
-      scale: {x: 0.065946005, y: 0.065946005, z: 0.065946}
-    - name: Sphere
-      parentName: Bone
-      position: {x: -0.041694805, y: 1.4512779, z: -0.0016978905}
-      rotation: {x: -0.7063408, y: -0.010453406, z: 0.0061543006, w: 0.707768}
-      scale: {x: 0.15099797, y: 0.15143009, z: 0.1996762}
-    - name: Bone_end
-      parentName: Bone
-      position: {x: -0, y: 1.6855586, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 0.18038541, y: 0.4927585, z: -1.1862624}
+      rotation: {x: 0.15483926, y: 0.8150485, z: -0.5497033, w: -0.09770969}
+      scale: {x: 2.000001, y: 1.9999994, z: 2}
     - name: Palm.R_end
       parentName: Palm.R
       position: {x: -0, y: 0.12674871, z: 0}
@@ -894,6 +675,26 @@ ModelImporter:
       position: {x: -0, y: 0.14204943, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: Run_Mage
+      parentName: Humanoid Armature
+      position: {x: -0.22653651, y: -1.793774, z: -0.47785544}
+      rotation: {x: 0.6541329, y: 0.70732343, z: 0.21344045, w: -0.16200902}
+      scale: {x: 0.99999934, y: 0.99999946, z: 0.9999996}
+    - name: Sword
+      parentName: Run_Mage
+      position: {x: 0.02237939, y: 0.17924047, z: -0.027389139}
+      rotation: {x: 1, y: 0.000000002033882, z: 0.00000016344951, w: -0.000000043711392}
+      scale: {x: 0.1574051, y: 0.15740511, z: 0.1574051}
+    - name: Sphere
+      parentName: Run_Mage
+      position: {x: -0.08746137, y: 3.4654784, z: -0.030035764}
+      rotation: {x: -0.7063408, y: -0.010453481, z: 0.0061548096, w: 0.707768}
+      scale: {x: 0.36041376, y: 0.3614453, z: 0.47660288}
+    - name: Run_Mage_end
+      parentName: Run_Mage
+      position: {x: -0, y: 3.3711152, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Scarf
       parentName: Mage(Clone)
       position: {x: -0, y: 1.4070681, z: 0}
@@ -907,14 +708,14 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: 
+    rootMotionBoneName: Humanoid Armature
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: fca9ae735d28a3242a8ab134d253854a,
     type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
