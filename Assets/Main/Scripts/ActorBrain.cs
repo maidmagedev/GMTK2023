@@ -11,6 +11,11 @@ public class ActorBrain : MonoBehaviour
     public ActionState myPriorityState = ActionState.attacking; // When split between reaching a destination, it will instead attack enemies.
 
     public List<ActorInfo> EnemiesInRange;
+    [Header("Settings")]
+    // float attackCD;
+    public float attackWindup = 1.0f;
+    public float attackRecovery = 1.0f;
+    public int attackDamage = 10;
 
     public enum ActionState {
         passive, // PRIORITY: Does nothing.
@@ -63,16 +68,20 @@ public class ActorBrain : MonoBehaviour
 
     public IEnumerator AttackActor(ActorInfo actor) {
         myCurrActionState = ActionState.attacking;
-        Debug.Log(myActorInfo.actorName + " is attacking " + actor.actorName);
+        if (actor != null) {
+            Debug.Log(myActorInfo.actorName + " is attacking " + actor.actorName);
+        }
         myAI.PauseAI(true);
         if (myAnimator != null) {
             this.transform.LookAt(actor.transform);
-            StartCoroutine(myAnimator.Attack());
+            StartCoroutine(myAnimator.Attack(attackWindup + attackRecovery));
         }
         // actor.currHealth -= 10;
-        yield return new WaitForSeconds(0.667f);
-        actor.RecieveDamage(10, myActorInfo);
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(attackWindup);
+        if (actor != null) {
+            actor.RecieveDamage(attackDamage, myActorInfo);
+        }
+        yield return new WaitForSeconds(attackRecovery);
         myAI.PauseAI(false);
         myCurrActionState = ActionState.passive;
     }

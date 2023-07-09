@@ -22,18 +22,23 @@ public class ActorAnim : MonoBehaviour
             // if (knightRB.velocity == Vector3.zero) {
             if (agent.velocity == Vector3.zero) {
                 //animator.GetFloat("Blend");
-                animator.SetFloat("Blend", 0.5f);
+                //animator.SetFloat("Blend", 0.5f);
+                animator.CrossFade("Idle", 0, 0);
             } else {
-                animator.SetFloat("Blend", 1.0f);
+                //animator.SetFloat("Blend", 1.0f);
+                animator.CrossFade("Run", 0, 0);
             }
         }
     }
 
-    public IEnumerator Attack() {
+    public IEnumerator Attack(float cd) {
         isAttacking = true;
-        animator.SetFloat("Blend", 0.0f);
-        yield return new WaitForSeconds(1.667f);
+        //animator.SetFloat("Blend", 0.0f);
+        animator.CrossFade("Attack", 0, 0);
+        yield return new WaitForSeconds(cd);
         isAttacking = false;
-        animator.SetFloat("Blend", 0.5f);
+        //animator.SetFloat("Blend", 0.5f);
+        animator.CrossFade("Idle", 0, 0);
+
     }
 }

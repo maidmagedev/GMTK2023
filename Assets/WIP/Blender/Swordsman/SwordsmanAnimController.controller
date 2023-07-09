@@ -14,7 +14,7 @@ AnimatorStateMachine:
     m_Position: {x: 240, y: 200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5141301432217443221}
-    m_Position: {x: 424.07135, y: 426.4933, z: 0}
+    m_Position: {x: 420, y: 430, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3625882537687605953}
     m_Position: {x: 430, y: 350, z: 0}
@@ -51,7 +51,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 4283508451850248467, guid: 9a862f0a46e447347b3148bb5938b889,
+  m_Motion: {fileID: 4283508451850248467, guid: a152234b716dd4b49a6f67499fd90f16,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -106,7 +106,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RangerAnimController 1
+  m_Name: SwordsmanAnimController
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Blend
@@ -148,7 +148,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -201253784001186134, guid: 9a862f0a46e447347b3148bb5938b889,
+  m_Motion: {fileID: 5296710977315633303, guid: a152234b716dd4b49a6f67499fd90f16,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -201,7 +201,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 6811611928136435466, guid: 9a862f0a46e447347b3148bb5938b889,
+  m_Motion: {fileID: 6811611928136435466, guid: a152234b716dd4b49a6f67499fd90f16,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 

@@ -8,6 +8,8 @@ public class BasicAI : MonoBehaviour
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Transform target;
     public PathfindingState currentPfState;
+    [Header("Settings")]
+    public float desiredStoppingDistance = 2.5f;
 
     public enum PathfindingState {
         following, // keep tracking a target as it moves.  
@@ -23,7 +25,7 @@ public class BasicAI : MonoBehaviour
     void SetPathfindingState(PathfindingState state) {
         switch (state) {
             case PathfindingState.following:
-                agent.stoppingDistance = 2.5f;
+                agent.stoppingDistance = desiredStoppingDistance;
                 break;
             case PathfindingState.movingToDestination:
                 agent.stoppingDistance = 0.0f;

@@ -41,7 +41,7 @@ public class ActorInfo : MonoBehaviour
     }
 
     public void Die() {
-        if (transform.parent.gameObject != null) {
+        if (transform != null && transform.parent != null && transform.parent.gameObject != null) {
             Destroy(transform.parent.gameObject);
         }
     }
